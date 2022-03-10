@@ -15,15 +15,19 @@ A theme plugin for Access to Memory (AtoM) designed for University of Victoria S
 
 For a typical installation of AtoM, use the following steps:
 
-1. Create `atom/plugins/arUVicEdgePlugin` directory.
+1. Create `atom/plugins/arUVicEdgePlugin` directory
 
-2. Move all files in the plugin repo to `atom/plugins/arUVicEdgePlugin`.
+2. Move all files in the plugin repo to `atom/plugins/arUVicEdgePlugin`
 
-3. Replace `atom/favicon.ico` with `atom/plugins/arUVicEdgePlugin/images/favicon.ico`.
+3. Replace `atom/favicon.ico` with `atom/plugins/arUVicEdgePlugin/images/favicon.ico`
 
-4. Run `make` from `atom/plugins/arUVicEdgePlugin` or `make -C /usr/share/nginx/atom/plugins/arUVicEdgePlugin`.
+4. Run `make` from `atom/plugins/arUVicEdgePlugin`
+     
+     Or
+     
+   `make -C /usr/share/nginx/atom/plugins/arUVicEdgePlugin`
 
-5. The theme should now be selectable from the Admin>Theme menu.
+5. The theme should now be selectable from the Admin>Theme menu
 
 ## Troubleshooting
 
@@ -33,4 +37,4 @@ If the theme fails to show up in the theme list or causes problems after selecti
 
 2. Clear the application cache: `sudo php symfony cc` from `atom` directory
 
-2. Restart php-fpm: `sudo systemctl restart php7.2-fpm` or `sudo systemctl restart php7.4-fpm` depending the version running
+3. Restart php-fpm: `sudo systemctl restart php7.2-fpm` or `sudo systemctl restart php7.4-fpm` depending the version running
