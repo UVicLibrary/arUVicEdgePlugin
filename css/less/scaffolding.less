@@ -1,0 +1,196 @@
+/*
+ * This file is part of the Access to Memory (AtoM) software.
+ *
+ * Access to Memory (AtoM) is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Access to Memory (AtoM) is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Access to Memory (AtoM).  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+// General links
+a:hover {
+  color: @edgeRed;
+  text-decoration: underline;
+}
+
+// Sidebar Edge flair
+#sidebar {
+
+  .flex-container {
+    display: flex;
+
+    h2 {
+      align-self: center;
+    }
+
+    .edge-flair {
+      align-self: center;
+      flex-grow: 1;
+      margin-left: 10px;
+      height: 9px;
+      border-radius: 1px;
+      background-position: center;
+      background-image: url(../../images/dynamic-edge-full-400.png)
+    }
+
+  }
+}
+
+// Action icon links
+#action-icons a:not(.btn){
+  color: @edgeBlue;
+
+  &:hover {
+    color: @edgeRed;
+    background-color: transparent;
+
+    i {
+      color: @edgeYellow;
+    }
+
+  }
+}
+
+// Selected pickers
+#sort-header .dropdown-selected {
+  color: @edgeBlue;
+}
+
+// Breadcrumb arrows
+.breadcrumb li:after {
+    color: @edgeYellow;
+}
+
+// Search facets
+.facet {
+
+  .facet-header a  {
+    font-weight: 500;
+    color: @white;
+    background-image: url(../../images/dynamic-edge-nw-quad.png);
+    background-repeat: no-repeat;
+    background-color: @edgeDarkBlue;
+
+    &:hover {
+      background-color: @edgeDarkBlue;
+    }
+
+    // Stretch image to fill on mobile
+    @media (max-width: 767px) {
+      background-size: 100%;
+    }
+
+    // Lighten arrow
+    &:after {
+      color: @grayLight;
+    }
+
+  }
+
+  &.open {
+    .facet-header a  {
+      background-color: @edgeDarkBlue;
+    }
+
+  }
+}
+
+// Filter buttons
+.search-filter {
+  color: @edgeBlue;
+  border-radius: 4px;
+}
+
+// Search results
+.search-result {
+
+  &.media-summary {
+    color: @edgeRed;
+
+    a {
+      color: @grayDark;
+    }
+  }
+
+  .result-details {
+    font-size: 100%;
+    color: @gray;
+
+    li.reference-code {
+        color: @edgeRed;
+    }
+  }
+
+  .creation-details {
+    color: @gray;
+  }
+
+}
+
+// Quick search
+.list-menu {
+
+  // Remove hover darkening of side panels
+  ul a:hover{
+    background-color: transparent;
+  }
+
+  .more {
+    border-top: 0;
+    background-image: url(../../images/dynamic-edge-nw-quad.png);
+    background-repeat: no-repeat;
+    background-color: @edgeDarkBlue;
+
+    @media (max-width: 767px) {
+      background-size: 100%;
+      }
+
+    i {
+      color: @white;
+    }
+
+    a {
+      color: @white;
+    }
+  }
+}
+
+// Action buttons background
+.actions {
+  #translucent > .background(@edgeDarkBlue, .2);
+}
+
+// Content
+#content {
+
+  // Section title
+  > h2,
+  > div > h2,
+  .section > h2,
+  .section > a > h2,
+  .section > span > h2,
+  section > h2,
+  section > a > h2,
+  section > span > h2 {
+    color: @edgeBlue;
+  }
+
+  // Title with link
+  section > a:hover {
+    text-decoration: none;
+  }
+
+  // Field headings
+  .field > h3 {
+    color: @gray;
+  }
+
+}

@@ -1,0 +1,77 @@
+/*
+ * This file is part of the Access to Memory (AtoM) software.
+ *
+ * Access to Memory (AtoM) is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Access to Memory (AtoM) is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Access to Memory (AtoM).  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+@topBarBackgroundColor:  @edgeDarkBlue;
+@topBarButtonHoverColor: @edgeGreen;
+
+#top-bar {
+
+  // Colour and background image
+  background-color: @topBarBackgroundColor;
+  background-image: url(../../images/edge-header-bg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  
+  // Thicken
+  padding: 10px;
+
+  // Shift login and menu buttons down
+  nav {
+    margin-top: 10px;
+  }
+
+}
+
+#search-bar {
+  // Shift browse and search menu down
+  margin-top: 10px;
+
+  // Browse menu impact fix for mobile
+  @media (max-width: 979px) {
+    margin-left: 20px;
+  }
+
+}
+
+#browse-menu .top {
+  margin: 12px 11px 0 11px;
+}
+
+// Extend logo margin to nudge (10px) the browse and search bars right
+header #logo {
+  margin: 0 30px 0 8px;
+}
+
+// Hover links in dropdowns to Edge Red
+.top-dropdown-container .top-dropdown-body ul a:hover {
+  color: @edgeRed;
+}
+
+#clipboard-menu {
+  
+  // Counter
+  > button > span {
+    background-color: @edgeRed;
+    color: @white;
+  }
+
+  // Dropdown counter
+  .top-dropdown-header > span {
+    color: @gray;
+  }
+
+}

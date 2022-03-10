@@ -1,0 +1,61 @@
+/*
+ * This file is part of the Access to Memory (AtoM) software.
+ *
+ * Access to Memory (AtoM) is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Access to Memory (AtoM) is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with Access to Memory (AtoM).  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+// Treeview / term sidebar
+#treeview-header p {
+    background-image: url(../../images/dynamic-edge-nw-quad.png);
+    background-repeat: no-repeat;
+    background-color: @edgeDarkBlue;
+
+    @media (max-width: 767px) {
+      background-size: 100%;
+    }
+
+}
+
+// More button
+#treeview .more a {
+  background-color: @edgeDarkBlue;
+}
+
+// Quick search
+#treeview-search {
+
+  .search-box {
+
+    input {
+      background-color: @gray;
+      .placeholder(#bbb);
+      color: @grayLighter;
+    }
+
+    button {
+      background-color: #666;
+    }
+
+  }
+
+  .popover-title {
+    color:@edgeBlue;
+  }
+
+  .no-results {
+    background-color: rgba(0, 0, 0, .2);
+    color: @grayDarker;
+  }
+
+}
