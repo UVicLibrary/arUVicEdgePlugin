@@ -37,4 +37,4 @@ If the theme fails to show up in the theme list or causes problems after selecti
 
 2. Clear the application cache: `sudo php symfony cc` from `atom` directory
 
-3. Restart php-fpm: `sudo systemctl restart php7.2-fpm` or `sudo systemctl restart php7.4-fpm` depending the version running
+3. Restart php-fpm: `sudo systemctl restart php7.2-fpm` or `sudo systemctl restart php7.4-fpm` depending on the version running
