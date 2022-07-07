@@ -21,7 +21,7 @@ class arUVicEdgePluginConfiguration extends sfPluginConfiguration
 {
   public static
     $summary = 'University of Victoria Edge theme, extension of arDominionPlugin.',
-    $version = '1.0';
+    $version = '1.0.1';
 
   public function contextLoadFactories(sfEvent $event)
   {
