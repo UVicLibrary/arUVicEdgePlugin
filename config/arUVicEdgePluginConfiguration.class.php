@@ -36,7 +36,7 @@ class arUVicEdgePluginConfiguration extends sfPluginConfiguration
     }
     else
     {
-      $context->response->addStylesheet('/plugins/arUVicEdgePlugin/css/main.css', 'last', array('media' => 'all'));
+      $context->response->addStylesheet('/plugins/arUVicEdgePlugin/css/min.css', 'last', array('media' => 'all'));
     }
   }
 
